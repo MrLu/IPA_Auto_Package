@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIRequiredDeviceCapabilities</key>
+	<dict>
+		<key>armv7</key>
+		<true/>
+	</dict>
+	<key>appleId</key>
+	<string>zl52132@hotmail.com</string>
+	<key>artistId</key>
+	<integer>912267278</integer>
+	<key>artistName</key>
+	<string>Beijing Baijiahulian Co.,Ltd.</string>
+	<key>bundleDisplayName</key>
+	<string>跟谁学</string>
+	<key>bundleShortVersionString</key>
+	<string>2.3.0</string>
+	<key>bundleVersion</key>
+	<string>2.3.0.1</string>
+	<key>copyright</key>
+	<string>Copyright © 2014-2015 跟谁学版权所有</string>
+	<key>drmVersionNumber</key>
+	<integer>0</integer>
+	<key>fileExtension</key>
+	<string>.app</string>
+	<key>genre</key>
+	<string>教育</string>
+	<key>genreId</key>
+	<integer>6017</integer>
+	<key>itemId</key>
+	<integer>919947654</integer>
+	<key>itemName</key>
+	<string>跟谁学－找老师神器</string>
+	<key>kind</key>
+	<string>software</string>
+	<key>playlistArtistName</key>
+	<string>Beijing Baijiahulian Co.,Ltd.</string>
+	<key>playlistName</key>
+	<string>跟谁学－找老师神器</string>
+	<key>product-type</key>
+	<string>ios-app</string>
+	<key>purchaseDate</key>
+	<date>2014-11-05T14:16:08Z</date>
+	<key>rating</key>
+	<dict>
+		<key>content</key>
+		<string>Advisory.NO.UNRESTRICTED_WEB_ACCESS and Advisory.NO.GAMBLING_CONTESTS</string>
+		<key>label</key>
+		<string>4+</string>
+		<key>rank</key>
+		<integer>100</integer>
+		<key>system</key>
+		<string>itunes-games</string>
+	</dict>
+	<key>releaseDate</key>
+	<string>2014-11-05T11:08:56Z</string>
+	<key>s</key>
+	<integer>143465</integer>
+	<key>softwareIcon57x57URL</key>
+	<string>http://a454.phobos.apple.com/us/r30/Purple3/v4/78/54/29/785429ce-f795-0a37-6222-8fab2bd672bf/AppIcon57x57.png</string>
+	<key>softwareIconNeedsShine</key>
+	<false/>
+	<key>softwareSupportedDeviceIds</key>
+	<array>
+		<integer>9</integer>
+		<integer>2</integer>
+		<integer>4</integer>
+	</array>
+	<key>softwareVersionBundleId</key>
+	<string>com.bjhl.student</string>
+	<key>softwareVersionExternalIdentifier</key>
+	<integer>712992652</integer>
+	<key>softwareVersionExternalIdentifiers</key>
+	<array>
+		<integer>712992652</integer>
+	</array>
+	<key>userName</key>
+	<string>Liang Zhao</string>
+	<key>vendorId</key>
+	<integer>101822803</integer>
+	<key>versionRestrictions</key>
+	<integer>16843008</integer>
+</dict>
+</plist>

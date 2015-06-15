@@ -5,7 +5,25 @@ echo "当前工作目录 $(pwd)"
 
 targetPath="../ipa_Jailbreak" #越狱文件目录
 originPath="../ipa_source"	#appstore包文件
+iTunesArtwork="iTunesArtwork.jpg"	#appstore 图片文件
+iTunesMetadata="iTunesMetadata.plist" #appStore 应用信息
 scriptPath=$(pwd) #当前脚本路径
+
+if [[ -e "$originPath/$iTunesArtwork" ]]; then
+	#statements
+	echo "iTunesArtwork 文件存在"
+else
+	echo "iTunesArtwork 文件不存在"
+	exit 
+fi
+
+if [[ -e "$originPath/$iTunesMetadata" ]]; then
+	#statements
+	echo "iTunesMetadata 文件存在"
+else
+	echo "iTunesMetadata 文件不存在"
+	exit 
+fi
 
 if [[ -e $targetPath ]]; then
 	#statements
@@ -45,6 +63,7 @@ funFindSoursePKFile(){
 			break
 		else
 			echo "$originPath 没有ipa包"
+			exit
 		fi
 	done
 	cd $scriptPath
@@ -116,12 +135,18 @@ EditPackage(){
 	funFindSPlistFile "${originPath}/Payload" "${editFile}" $1
 	cd $originPath
 	echo $(pwd)
+	#拷贝
+	open Payload/
+	cp $iTunesArtwork Payload/$iTunesArtwork
+	cp $iTunesMetadata Payload/$iTunesMetadata
+
 	#结果包名字
 	targetfile=$originIpa
 	targetfile=${originIpa/.ipa/_$1.ipa}
 	echo "完成的文件:$targetfile"
 	#打包
-	tar -cf ${targetfile} Payload/ Symbols/
+	# tar -cf ${targetfile} Payload/
+	zip -r ${targetfile} Payload/
 	echo "打包完成:$?"
 	#完成包位置移动
 	echo "cp ${targetfile}/${targetfile} ${targetPath}/${targetfile}"
